@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="client_parent" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufms.bancas.controller.HomeController">
+    <left>
+        <fx:include source="menu_options.fxml" />
+    </left>
+
+    <center>
+        <fx:include source="dashboard.fxml" />
+    </center>
+</BorderPane>

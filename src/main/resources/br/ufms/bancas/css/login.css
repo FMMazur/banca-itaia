@@ -1,0 +1,41 @@
+* {
+    -mfx-blue: #2196f3;
+    -mfx-charcoal: #445055;
+    -mfx-green: #4caf50;
+    -mfx-onyx: #353935;
+    -mfx-orange: #ff9800;
+    -mfx-purple: #7a0ed9;
+    -mfx-red: #EF6E6B;
+    -mfx-yellow: #FFEA00;
+}
+
+.close-icon {
+    -mfx-color: -mfx-red;
+    -fx-opacity: 0.5;
+}
+
+.close-icon:hover {
+    -fx-opacity: 1.0;
+}
+
+.minimize-icon {
+    -mfx-color: #ffbf37;
+    -fx-opacity: 0.5;
+}
+
+.minimize-icon:hover {
+    -fx-opacity: 1.0;
+}
+
+.always-on-top-icon {
+    -mfx-color: -mfx-purple;
+    -fx-opacity: 0.5;
+}
+
+.always-on-top-icon:hover {
+    -fx-opacity: 1.0;
+}
+
+.always-on-top-icon:always-on-top {
+    -fx-opacity: 1.0;
+}

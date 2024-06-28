@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox spacing="16.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.ufms.bancas.controller.DashboardController">
+    <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+    </padding>
+    <HBox spacing="20.0">
+        <Pane prefHeight="97.0" prefWidth="198.0" style="-fx-background-color: #B1BB91;">
+            <Label layoutX="16.0" layoutY="62.0" text="Valor Total Vendido Hoje">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="19.0" text="R$ 0,00">
+                <font>
+                    <Font name="System Bold" size="29.0"/>
+                </font>
+            </Label>
+        </Pane>
+        <Pane prefHeight="97.0" prefWidth="198.0" style="-fx-background-color: #B1BB91;">
+            <Label layoutX="91.0" layoutY="19.0" text="0" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="29.0"/>
+                </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="62.0" text=" Vendas Realizadas Hoje">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+        </Pane>
+        <Pane prefHeight="97.0" prefWidth="198.0" style="-fx-background-color: #B1BB91;">
+            <Label layoutX="61.0" layoutY="62.0" text="Saldo Atual">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="27.0" text="R$ 0,00" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="29.0"/>
+                </font>
+            </Label>
+        </Pane>
+    </HBox>
+    <TableView fx:id="items" prefHeight="563.0" prefWidth="634.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="ID"/>
+            <TableColumn prefWidth="75.0" text="Data "/>
+            <TableColumn prefWidth="75.0" text="Valor"/>
+        </columns>
+    </TableView>
+</VBox>
